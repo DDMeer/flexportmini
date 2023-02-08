@@ -1,5 +1,5 @@
 - content_for :title do
-  Corsego 
+  Flexportmini 
   \| 
   = @user.username
 
@@ -62,7 +62,7 @@
           = @user.balance
       .card-footer
         .fa.fa-graduation-cap
-        Courses created:
+        Articles created:
         = @user.courses_count
         .row
         .fa.fa-lock-open
@@ -94,7 +94,7 @@
   .col-md-6
     .card.shadow
       .card-header
-        %b Courses: Teaching
+        %b Articles: Teaching
       .card-body
         - @courses_teaching.each do |course|
           .row
@@ -102,7 +102,7 @@
     %p
     .card.shadow
       .card-header
-        %b Courses: Learning
+        %b Articles: Learning
       .card-body
         - @courses_learning.each do |enrollment|
           .row

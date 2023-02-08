@@ -1,66 +1,45 @@
 - content_for :title do
-  Corsego Online Courses
+  Flexportmini Online Articles
 
-.jumbotron.shadow.parallax
+.jumbotron.shadow.parallax(style="background-image: url('ship.png');background-size: auto;
+            background-repeat: no-repeat;")
   %h1.text-shadow
-    %b Good Ruby on Rails courses
+    %b Take Control of Your Supply Chain
   .p-4
   - if current_user
     .p-3
     = search_form_for @ransack_courses, as: :courses_search, url: courses_path do |f|
       .input-group
-        = f.search_field :title_cont, class: 'form-control-lg', style: 'float: left; width: 200px; ', placeholder: 'Find a course', :autocomplete => :off
+        = f.search_field :title_cont, class: 'form-control-lg', style: 'float: left; width: 200px; ', placeholder: 'Find a airticle', :autocomplete => :off
         %span.input-group-append
           %button.btn.btn-primary.btn-lg{:type => "submit"}
             %span.fa.fa-search{"aria-hidden" => "true"}
     .p-2
   - else
-    %h3.text-shadow Join to access all the courses
-    .p-2
-    = link_to 'Register', new_user_registration_path, class: 'btn btn-custom-purple btn-lg'
-    = link_to 'Login', new_user_session_path, class: 'btn btn-custom-purple btn-lg'
-    .row.mt-1
-    = link_to user_google_oauth2_omniauth_authorize_path, method: :post, class: 'btn btn-danger btn-lg mr-1' do
-      Continue with
-      .fab.fa-google
-    .row.mt-1
-    = link_to user_github_omniauth_authorize_path, method: :post, class: 'btn btn-dark btn-lg mr-1' do
-      Continue with
-      .fab.fa-github
-    .row.mt-1
-    = link_to user_facebook_omniauth_authorize_path, method: :post, class: 'btn btn-primary btn-lg mr-1' do
-      Continue with
-      .fab.fa-facebook
+    %h3.text-shadow Ship, Track, and Scale in Just a Few Clicks
+    
 
 .card-group.shadow
   .card
     .card-body
       %h1
-        .fa.fa-graduation-cap
-      = pluralize(Course.approved.published.count, 'online courses')
-      .row
-      %small Explore a variety of fresh topics
-  .card
-    .card-body
-      %h1
-        .fa.fa-chalkboard-teacher
-      = pluralize(Course.distinct.count(:user_id), 'expert instructors')
-      .row
-      %small Find the right instructor for you
-  .card
-    .card-body
-      %h1
-        .fa.fa-user-graduate
-      = pluralize(User.count, 'active learners')
-      .row
-      %small Join the knowledge sharing community
+        .fa.fa-infinity
+      Find Out What Your Supply Chain Can Really Do
   .card
     .card-body
       %h1
         .fa.fa-infinity
-      Lifetime access
-      .row
-      %small Learn on your schedule
+      Raise the Bar on Your Supply Chain
+  .card
+    .card-body
+      %h1
+        .fa.fa-infinity
+      10,000+ Companies Choose Flexportmini
+  .card
+    .card-body
+      %h1
+        .fa.fa-infinity
+      Lead Positive Change for the World
 
 %p
 
@@ -88,23 +67,15 @@
     .card-body
       %b
         .fa.fa-clock
-        Go at your own pace
-      %br
-      %small
-        Enjoy lifetime access to courses whenever you want
+        Classify Products Accurately
   .card
     .card-body
       %b
         .far.fa-check-circle
-        Learn from industry experts
-      %br
-      %small
-        Select from top instructors around the world
+        Clear Goods Faster with Flexportmini
   .card
     .card-body
       %b
         .far.fa-play-circle
-        Find video courses on almost any topic
-      %br
-      %small
-        Build your library for your career and personal growth
+        A Fresh Approach to Clear High Value Goods
+      

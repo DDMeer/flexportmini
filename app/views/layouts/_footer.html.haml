@@ -3,13 +3,13 @@
     %br/
     .row
       .col-lg-4
-        = link_to 'Corsego', root_path, class: "#{'active font-weight-bold' if current_page?(root_path)}"
+        = link_to 'Flexportmini', root_path, class: "#{'active font-weight-bold' if current_page?(root_path)}"
         ©
         \#{Time.now.year}
         %br/
         = link_to t('navigation.home'), root_path, class: "#{'active font-weight-bold' if current_page?(root_path)}"
         %br/
-        = mail_to 'hello@corsego.com' do
+        = mail_to 'hello@Flexportmini.com' do
           .fa.fa-envelope
         = link_to "https://twitter.com/yarotheslav", target: :_blank do
           .fab.fa-twitter
@@ -22,7 +22,7 @@
         %script{"data-counter" => "top", "data-id" => "42835367", :type => "IN/FollowCompany"}
       .col-lg-4
         .row
-        = link_to 'Teach on Corsego', new_course_path, class: "#{'active font-weight-bold' if current_page?(new_course_path)}"
+        = link_to 'Resouces on Flexportmini', new_course_path, class: "#{'active font-weight-bold' if current_page?(new_course_path)}"
         .row
         = link_to 'About', about_path, class: "#{'active font-weight-bold' if current_page?(about_path)}"
         .row
@@ -30,19 +30,15 @@
         .row
         = link_to 'Terms', terms_path, class: "#{'active font-weight-bold' if current_page?(terms_path)}"
       .col-lg-4
-        = link_to "https://gumroad.com/l/ror6saas", target: :_blank do
-          Learn to build a Multi-Tenancy SaaS
+          Help center
           .fa.fa-external-link-alt
         .row
-        = link_to "https://www.udemy.com/course/ruby-on-rails-6-learn-20-gems-build-an-e-learning-platform/?referralCode=4721E9D437DEE1734159", target: :_blank do
-          Learn to build an eLearning platform
+          API tutorials
           .fa.fa-external-link-alt
         .row
-        = link_to "https://saas.corsego.com", target: :_blank do
-          SaaS Multi-Tenancy Boilerplate
+          Contact
           .fa.fa-external-link-alt
         .row
-        = link_to "https://blog.corsego.com", target: :_blank do
-          Corsego Ruby on Rails Blog
+          Events
           .fa.fa-external-link-alt
   %br/

@@ -1,7 +1,7 @@
 require 'aws-sdk-s3'
 SitemapGenerator::Sitemap.compress = false
 # Your website's host name
-SitemapGenerator::Sitemap.default_host = "https://www.corsego.com"
+SitemapGenerator::Sitemap.default_host = "https://www.Flexportmini.com"
 # The remote host where your sitemaps will be hosted
 SitemapGenerator::Sitemap.sitemaps_host = "https://corsego-public.s3.eu-central-1.amazonaws.com/"
 

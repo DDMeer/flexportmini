@@ -9,7 +9,7 @@
     %script{:src => "https://js.stripe.com/v3/"}
     = favicon_link_tag 'thumbnail.png'
     %title
-      = content_for?(:title) ? yield(:title) : "Corsego"
+      = content_for?(:title) ? yield(:title) : "Flexportmini"
     = csrf_meta_tags
     = csp_meta_tag
 
@@ -17,7 +17,7 @@
     = stylesheet_pack_tag 'application', media: 'all', 'data-turbolinks-track': 'reload'
     = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload'
     - if Rails.env.production?
-      %script{"data-domain" => "corsego.com", :defer => "defer", :src => "https://plausible.io/js/plausible.js"}
+      %script{"data-domain" => "Flexportmini.com", :defer => "defer", :src => "https://plausible.io/js/plausible.js"}
       = render 'layouts/google_analytics'
   %body
     = render 'layouts/header'
